@@ -1,0 +1,11 @@
+package utils;
+
+import jakarta.servlet.http.HttpServletResponse;
+
+public class CookieManager
+{
+	public static void makeCookie(HttpServletResponse response, String cname, 
+			String cValue, int cTime) {
+		Cookie cookie = new Cookie()
+	}
+}

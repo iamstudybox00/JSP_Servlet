@@ -2,9 +2,14 @@
 <section name="Workbench">
 	<section name="WorkbenchPreferenceDialog.dialogBounds">
 		<item key="DIALOG_X_ORIGIN" value="627"/>
-		<item key="DIALOG_Y_ORIGIN" value="86"/>
-		<item key="DIALOG_WIDTH" value="884"/>
-		<item key="DIALOG_HEIGHT" value="953"/>
+		<item key="DIALOG_Y_ORIGIN" value="9"/>
+		<item key="DIALOG_WIDTH" value="1111"/>
+		<item key="DIALOG_HEIGHT" value="1030"/>
 		<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
+	</section>
+	<section name="org.eclipse.ui.preferences.keysPreferencePage">
+		<item key="actionSetFilter" value="true"/>
+		<item key="internalFilter" value="true"/>
+		<item key="uncategorizedFilter" value="true"/>
 	</section>
 </section>
