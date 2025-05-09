@@ -66,3 +66,15 @@ INSERT INTO board VALUES (seq_board_num.nextval, '지금은 겨울입니다', '�
 commit;
 
 SELECT * FROM member;
+
+DESC member;
+
+SELECT * FROM member;
+SELECT id, pass, rownum FROM member;
+
+SELECT * FROM (
+    SELECT Tb.*, rownum rNum FROM (
+        SELECT * FROM board ORDER BY num DESC
+    ) Tb
+)
+ WHERE rNum BETWEEN 1 AND 10;
