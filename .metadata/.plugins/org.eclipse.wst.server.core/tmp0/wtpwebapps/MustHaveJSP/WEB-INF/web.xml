@@ -76,4 +76,26 @@
 		<servlet-name>HelloServlet</servlet-name>	<!-- <servlet>에서 사용할 이름과 동일 -->
 		<url-pattern>/12Servlet/HelloServlet.do</url-pattern>	<!-- 요청명으로 사용할 경로 -->
 	</servlet-mapping>
+	
+	<servlet>  <!-- 서블릿 등록 -->
+		<servlet-name>DirectServletPrint</servlet-name>	<!-- 서블릿 참조할 때 사용할 이름 -->
+		<servlet-class>servlet.DirectServletPrint</servlet-class>	<!-- 서블릿을 패키지포함 명시 -->
+	</servlet>	
+	<servlet-mapping>   <!-- 서블릿과 요청명(요청 URL) 매핑 -->
+		<servlet-name>DirectServletPrint</servlet-name>	<!-- <servlet>에서 사용할 이름과 동일 -->
+		<url-pattern>/12Servlet/DirectServletPrint.do</url-pattern>	<!-- 요청명으로 사용할 경로 -->
+	</servlet-mapping>
+	
+	<servlet>  <!-- 서블릿 등록 -->
+		<servlet-name>MemberAuth</servlet-name>	<!-- 서블릿 참조할 때 사용할 이름 -->
+		<servlet-class>servlet.MemberAuth</servlet-class>	<!-- 서블릿을 패키지포함 명시 -->
+		<init-param>
+			<param-name>admin_id</param-name>
+			<param-value>booox</param-value>
+		</init-param>
+	</servlet>	
+	<servlet-mapping>   <!-- 서블릿과 요청명(요청 URL) 매핑 -->
+		<servlet-name>MemberAuth</servlet-name>	<!-- <servlet>에서 사용할 이름과 동일 -->
+		<url-pattern>/12Servlet/MemberAuth.mvc</url-pattern>	<!-- 요청명으로 사용할 경로 -->
+	</servlet-mapping>
 </web-app>
