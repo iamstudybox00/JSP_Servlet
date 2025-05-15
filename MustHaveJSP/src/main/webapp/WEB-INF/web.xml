@@ -98,4 +98,26 @@
 		<servlet-name>MemberAuth</servlet-name>	<!-- <servlet>에서 사용할 이름과 동일 -->
 		<url-pattern>/12Servlet/MemberAuth.mvc</url-pattern>	<!-- 요청명으로 사용할 경로 -->
 	</servlet-mapping>
+	
+	<servlet>  <!-- 서블릿 등록 -->
+		<servlet-name>MVCBoardList</servlet-name>	<!-- 서블릿 참조할 때 사용할 이름 -->
+		<servlet-class>model2.mvcboard.ListController</servlet-class>	<!-- 서블릿을 패키지포함 명시 -->
+	</servlet>	
+	<servlet-mapping>   <!-- 서블릿과 요청명(요청 URL) 매핑 -->
+		<servlet-name>MVCBoardList</servlet-name>	<!-- <servlet>에서 사용할 이름과 동일 -->
+		<url-pattern>/mvcboard/list.do</url-pattern>	<!-- 요청명으로 사용할 경로 -->
+	</servlet-mapping>
+	
+	<servlet>
+	<servlet-name>MVCBoardWrite</servlet-name>
+	<servlet-class>model2.mvcboard.WriteController</servlet-class>
+		<multipart-config>
+			<max-file-size>1048576</max-file-size>
+			<max-request-size>10485760</max-request-size>
+		</multipart-config>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>MVCBoardWrite</servlet-name>
+		<url-pattern>/mvcboard/write.do</url-pattern>
+	</servlet-mapping>
 </web-app>
