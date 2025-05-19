@@ -47,7 +47,7 @@
 			<tr align="center">	
 				<td>${ map.totalCount - (((map.pageNum - 1) * map.pageSize) + loop.index) }</td>
 				<td align="left">
-					<a href="../mveboard.view.do?idx=${ row.idx }">${ row.title }</a>
+					<a href="../mvcboard/view.do?idx=${ row.idx }">${ row.title }</a>
 				</td>
 				<td>${ row.name }</td>
 				<td>${ row.visitCount }</td>

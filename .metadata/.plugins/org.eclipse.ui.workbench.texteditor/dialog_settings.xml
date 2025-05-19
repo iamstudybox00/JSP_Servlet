@@ -5,6 +5,8 @@
 		<item key="replaceBarOpen" value="false"/>
 		<item key="selection" value=""/>
 		<list key="findhistory">
+			<item value="account"/>
+			<item value="mvcbb"/>
 			<item value="8081"/>
 		</list>
 	</section>

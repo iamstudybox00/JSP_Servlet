@@ -12,6 +12,7 @@
 		<item value="iamstudybox00 &lt;iamstudybox00@gmail.com&gt;"/>
 	</list>
 	<list key="RepositorySelectionPage.UsedUris">
+		<item value="https://github.com/iamstudybox00/practice.git"/>
 		<item value="https://github.com/iamstudybox00/JSP_With_Git.git"/>
 	</list>
 	<section name="org.eclipse.egit.ui.internal.staging.StagingView">
